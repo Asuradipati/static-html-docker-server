@@ -3,7 +3,7 @@ pipeline {
     environment{
         IMAGE_REPO_NAME="authorization_service"
         IMAGE_TAG="practice"
-        REPOSITORY_URI = "238393102293.dkr.ecr.us-east-2.amazonaws.com/authorization_service"
+        REPOSITORY_URI = "jenkins secret"
         AWS_ACCESS_KEY_ID=credentials('jenkins secret')
         AWS_SECRET_ACCESS_KEY=credentials('jenkins secret')
     }
