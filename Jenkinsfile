@@ -1,12 +1,12 @@
 pipeline {
     agent any
-    environment{
+   // environment{
 //         IMAGE_REPO_NAME="authorization_service"
 //         IMAGE_TAG="practice"
 //         REPOSITORY_URI = ("jenkins secret"
 //         AWS_ACCESS_KEY_ID=("jenkins secret")
 //         AWS_SECRET_ACCESS_KEY=('jenkins secret')
-    }
+  //  }
         
 
     stages {
@@ -46,15 +46,16 @@ pipeline {
 //             }
 //         }
         
-//         stage('Pushing to ECR') {
-//             steps{  
-//                 script {
+       stage('Pushing to ECR') {
+             steps{  
+                 script {
+                       sh "echo hello"
 //                     sh "docker tag ${IMAGE_REPO_NAME}:${IMAGE_TAG} ${REPOSITORY_URI}:$IMAGE_TAG"
 //                     sh "docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
 //                     sh "docker images -q ${IMAGE_REPO_NAME}:${IMAGE_TAG} | xargs docker rmi -f"
-//                 }
-//             }
-//         }
+                }
+             }
+        }
    
     }
 }
