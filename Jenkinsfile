@@ -8,7 +8,6 @@ pipeline {
 //         AWS_SECRET_ACCESS_KEY=('jenkins secret')
   //  }
         
-
     stages {
         
         stage('Cloning Git') {
